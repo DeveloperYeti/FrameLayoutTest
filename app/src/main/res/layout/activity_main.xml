@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_margin="@dimen/marginMedium">
+
+    <LinearLayout
+        android:layout_margin="@dimen/marginMedium"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheezeduck1"
+            android:layout_marginRight="@dimen/marginSmall"
+            android:backgroundTint="#ffff00">
+        </Button>
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheezeduck2"
+            android:layout_marginRight="@dimen/marginSmall"
+            android:backgroundTint="#ffff00">
+        </Button>
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheezeduck3"
+            android:layout_marginRight="@dimen/marginSmall"
+            android:backgroundTint="#ffff00">
+        </Button>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_margin="@dimen/marginLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imgv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/cheezeduck1">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/imgv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/cheezeduck2">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/imgv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/cheezeduck3">
+
+            </ImageView>
+    </FrameLayout>
+
+</LinearLayout>
